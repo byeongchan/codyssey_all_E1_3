@@ -33,17 +33,20 @@ python main.py
 ## 파일 구조
 
 ```text
-main.py
-data.json
-README.md
-src/
-    __init__.py
-    matrix.py
-    mac.py
-    judge.py
-    perf.py
-    mode_input.py
-    mode_json.py
+codyssey_all_E1_3/
+│
+├── main.py              # 프로그램 시작 및 모드 선택
+├── data.json            # 크기별 필터와 테스트 패턴
+├── README.md            # 실행 안내 및 결과 분석
+│
+└── src/
+    ├── __init__.py      # 패키지 초기화 파일
+    ├── matrix.py        # 2차원 배열 및 십자가 패턴 생성
+    ├── mac.py           # 반복문 기반 MAC 연산
+    ├── judge.py         # 라벨 정규화 및 허용오차 기반 판정
+    ├── mode_input.py    # 3×3 사용자 입력 및 검증
+    ├── mode_json.py     # JSON 검증, 일괄 판정 및 결과 요약
+    └── perf.py          # MAC 실행 시간 측정 및 성능 표 출력
 ```
 
 ## 구현 요약
